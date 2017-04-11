@@ -1,0 +1,742 @@
+/* index */
+
+.introhero{
+	width:100%;
+	height:40vh;
+	margin-bottom: 50px;
+	position:relative;
+
+	@include breakpoint('medium'){
+		margin-bottom: 100px;
+	}
+
+}
+
+.welcome-text{
+
+	p{
+		text-align: center;
+		top:5%;
+		color:grey;
+		font-family:$font-main-header;
+		position:absolute;
+	}
+
+
+		@include breakpoint('medium'){
+			p{
+				top:15%;
+			}
+		}
+	
+}
+
+.logo {
+	padding-top: 20%;
+
+
+	img{
+		height:100px;
+		width:100px;
+		margin: 0 auto;
+		display:block;
+	}
+
+	@include breakpoint('phablet'){
+		padding-top: 15%;
+
+		img{
+		height:170px;
+		width:170px;
+		margin: 0 auto;
+		display:block;
+	}
+		
+	}
+		@include breakpoint('medium'){
+		padding-top: 10%;
+
+		img{
+		height:220px;
+		width:220px;
+		margin: 0 auto;
+		display:block;
+	}
+		
+	}
+	
+}
+
+
+
+.hero{
+	width:100%;
+	height:50vh;
+	background-image: url('../img/headshot-med.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	position:relative;
+
+	h3{
+		position: absolute;
+		color:grey;
+		font-family:$font-main-header;
+		top: 70%;
+		right: 5%;
+		font-size: 20px;
+		text-shadow:2px 2px 4px white;
+
+
+		&:first-child{
+			right:5%;
+			top:58%;
+		}
+	}
+
+	
+
+		@include breakpoint('phablet'){
+			height:65vh;
+		
+			h3{
+				top: 70%;
+				right: 10%;
+
+				&:first-child{
+					right:5%;
+					top:60%;
+				}
+			}
+		}
+
+			@include breakpoint('medium'){	
+			height:65vh;
+
+				h3{
+					top: 60%;
+					right: 25%;
+					font-size: 40px;
+
+					&:first-child{
+						right:25%;
+						top:50%;
+					}
+				}
+			}
+
+				@include breakpoint('wide'){
+					background-image: url('../img/headshot-wide.jpg');
+					background-position: center;
+					height:60vh;
+
+					h3{
+					
+					}
+					
+				}
+
+				@include breakpoint('widest'){
+
+
+					h3{
+						right:30%;
+					
+						&:first-child{
+							right:30%;
+							top:50%;
+						}
+					}
+				}		
+}
+
+
+.codehero{
+	width:100%;
+	height:100vh;
+	overflow:hidden;
+
+
+}
+
+#flip{
+	font-size:26px;
+	line-height:30px;
+	margin-left:12px;
+	padding-top:5px;
+	color:black;
+	overflow:hidden;
+
+		@include breakpoint('phablet'){
+			font-size:30px;
+			line-height:36px;
+			margin-left: 15px;	
+		}
+
+			@include breakpoint('medium'){
+				font-size:46px;
+				line-height:50px;			
+				
+			}
+
+				@include breakpoint('wide'){
+					font-size:55px;
+					line-height:58px;		
+				}
+			
+}
+
+// .circle-selections{
+// 	max-width: 320px;
+// 	margin:0 auto;
+	
+// 	@include breakpoint('phablet'){
+// 		max-width:400px;
+		
+// 	}
+
+// 		@include breakpoint('medium'){
+// 		max-width:600px;
+		
+// 	}
+
+// 			@include breakpoint('medium'){
+// 				margin: 0;
+				
+// 			}
+// }
+#portfolio{
+	height:100vh;
+	width:100%;
+	color:#eae9e1;
+}
+
+/*sections section*/
+.selections{
+	background-image: url('../img/backofmemobile.jpg');
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	background-position:bottom;
+	color:#eae9e1;
+	height:100vh;
+	position:relative;
+	z-index: 1;
+
+
+	p{
+		font-size:11px;
+		padding-top:20%;
+		color:grey;	
+		text-align:center;
+		line-height:1;
+		padding-top:35%;
+		font-family:$font-main-header;
+	}
+
+		@include breakpoint('phablet'){
+			height:70vh;
+			position: relative;
+			background-image: url('../img/backofme-medium.jpg');
+			background-size:cover;
+			background-repeat: no-repeat;
+			z-index: 1;
+			
+		
+			p{
+				font-size: 14px;
+				margin-top: 10px;
+			}
+		}
+
+			@include breakpoint('medium'){
+				background-image: url('../img/backofmecrop-med.jpg');
+				background-size: cover;
+
+				background-position: top;
+				background-repeat: no-repeat;
+				height:70vh;
+
+				p{
+					font-size:16px;
+					padding-top:40%;
+				}
+			}
+
+				@include breakpoint('wide'){
+					background-image: url('../img/backofme-widest.jpg');
+					background-size: cover;
+
+					background-position: center;
+					height:100vh;
+
+					p{
+						font-size:20px;
+						padding-top:40%;
+					}	
+				}
+
+}
+
+.selections a{
+	text-decoration:none;
+}
+
+
+.design{
+	position:absolute;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	background-color:white;
+	top:30%;	
+	left:10%;
+	transition: all .2s ease-in-out;
+
+	p{
+		font-size: 10px;
+		padding-top: 20px;
+	}
+
+		&:hover{
+			background-color:$color-text-dark;
+			transform: scale(1.1);
+		
+			p{
+				color:white;
+			}
+		}
+
+		@include breakpoint('phablet'){
+			width:90px;
+			height:90px;
+			top:35%;	
+			
+
+			p{
+				font-size: 14px;
+				padding-top: 20px;
+			}
+
+			&:hover{
+				
+				p{
+					
+					font-size: 14px;
+				}
+			}
+				
+		}
+
+		@include breakpoint('medium'){
+			width:120px;
+			height:120px;
+			top:45%;
+			p{
+				font-size: 16px;
+				padding-top: 35px;
+			}
+
+			&:hover{
+
+				p{
+					
+					font-size: 16px;
+				}
+			}
+		}
+
+			@include breakpoint('wide'){
+				width:180px;
+				height:180px;
+				
+				p{
+					font-size:18px;
+					padding-top: 60px;
+				}
+
+				&:hover{	
+
+					p{
+						font-size:18px;
+					}
+				}
+			}
+}
+
+
+.web{
+	position:absolute;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	background-color:white;
+	top:5%;	
+	left:5%;
+	transition: all .2s ease-in-out;
+
+	p{
+		font-size: 12px;
+		padding-top: 15px;
+	}
+	
+	/*&:hover{
+		transform: scale(1.1);
+		background-color:$color-text-dark;
+	
+		p{
+			font-size: 12px;
+			color:white;
+		}*/
+	
+		
+		@include breakpoint('phablet'){
+			width:110px;
+			height:110px;
+
+			p{
+				font-size: 14px;
+				padding-top: 30px;
+			}
+
+			
+		}
+
+			@include breakpoint('medium'){
+				width:150px;
+				height:150px;
+
+				p{
+					font-size: 16px;
+					padding-top: 45px;
+				}
+				
+				/*&:hover{
+
+						p{
+							font-size: 16px;
+						}
+					}*/
+
+
+			}
+				@include breakpoint('wide'){
+					width:260px;
+					height:260px;
+
+					p{
+						font-size: 18px;
+						padding-top: 100px;
+					}
+
+					/*&:hover{
+
+						p{
+							font-size: 18px;
+						}
+					}*/
+				}
+}
+
+.art-projects{
+	position:absolute;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	background-color:white;
+	top:25%;
+	right:10%;
+	transition: all .2s ease-in-out;
+
+	p{
+		font-size: 11px;
+		padding-top:15px;		
+	}
+
+	&:hover{
+		background-color:$color-text-dark;
+		transform: scale(1.1);
+	
+
+		p{
+			color:white;
+		}
+	}
+	
+
+		@include breakpoint('phablet'){
+			width:100px;
+			height:100px;
+			top:35%;
+
+			p{
+				font-size: 14px;
+				padding-top:25px;	
+			}
+
+				&:hover{
+					p{
+						font-size: 14px;
+					}
+				}
+				
+		}
+			@include breakpoint('medium'){
+				width:120px;
+				height:120px;
+				top:35%;
+
+				p{
+					padding-top:30px;
+					font-size:18px;	
+				}
+
+					&:hover{
+						
+					p{
+						font-size: 18px;	
+					}
+				}
+
+			}
+				@include breakpoint('wide'){
+					width:170px;
+					height:170px;
+
+					p{
+						padding-top: 50px;
+					}
+
+		
+				}
+}
+
+.about{
+	position:absolute;
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	background-color:white;
+	top:60%;	
+	left:5%;
+	transition: all .2s ease-in-out;
+	
+	p{
+		padding-top: 15px;
+	}
+
+	&:hover{
+		background-color:$color-text-dark;
+		transform: scale(1.1);
+		
+		p{
+			color:white;
+		}
+	}
+
+
+
+		@include breakpoint('phablet'){
+			width:80px;
+			height:80px;
+			top:65%;
+		
+			p{
+				padding-top: 25px;
+				font-size: 14px;
+			}
+
+		}
+			@include breakpoint('medium'){
+				width:100px;
+				height:100px;
+				top:75%;
+				
+				 p{
+					padding-top:35px;
+					font-size:18px;
+				}
+
+				&:hover{
+					p{
+						
+						font-size:18px;
+					}
+				}
+			
+			}	
+				@include breakpoint('wide'){
+					width:160px;
+					height:160px;
+					
+
+					 p{
+						padding-top:60px;
+						font-size:18px;
+					}
+
+					&:hover{
+
+						p{
+							font-size:18px;
+						}
+					}
+				}
+										
+}
+
+.painting{
+	position:absolute;
+	width:80px;
+	height:80px;
+	border-radius: 50%;
+	background-color:white;
+	top:60%;	
+	right:10%;
+	transition: all .2s ease-in-out;
+	
+		p{
+			margin-top: 0px;
+			font-size: 12px;
+		}
+
+		&:hover{
+			background-color:$color-text-dark;
+			transform: scale(1.1);	
+		
+			p{
+				color:white;
+			}
+		}
+		
+
+		@include breakpoint('phablet'){
+			width:100px;
+			height:100px;
+			
+				p{
+					padding-top: 30px;
+					font-size: 14px;
+				}
+
+				&:hover{
+					margin-left:305px;
+
+				}
+				
+		}
+
+			@include breakpoint('medium'){
+				width:120px;
+				height:120px;
+				top:65%;
+				
+					p{
+						margin-top: 0px;
+						font-size: 18px;
+						padding-top: 40px;
+					}
+
+					&:hover{
+						margin-left:75vw;
+					}
+			}
+
+				@include breakpoint('wide'){
+					width:170px;
+					height:170px;
+					
+
+						p{
+							padding-top:65px;
+							font-size:18px;	
+						}
+
+						&:hover{
+							margin-left: 70vw;
+
+						}
+				}
+}
+
+.contact{
+	position:absolute;
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	top:3%;	
+	right:10%;
+	transition: all .2s ease-in-out;
+	background-color:white;
+	
+	p{
+		margin-top: 3px;
+	}
+
+	&:hover{
+		background-color:$color-text-dark;
+		transform: scale(1.1);	
+
+		p{
+			color:white;
+		}
+	}
+
+	@include breakpoint('phablet'){
+		width:80px;
+		height:80px;
+		top:5%;	
+		right:5%;
+
+		p{
+			padding-top: 30px;
+			font-size:14px;
+		}
+	}
+
+		@include breakpoint('medium'){
+			width:100px;
+			height:100px;
+			margin-top:20px;	
+			margin-left:70vw;
+
+			p{
+				padding-top: 40px;
+				font-size:18px;
+			}
+
+		}
+
+			@include breakpoint('wide'){
+				width:180px;
+				height:180px;
+				margin-top:2vh;	
+				margin-left:77vw;
+
+				p{
+					padding-top: 80px;
+					font-size:18px;
+				}
+				
+			}
+}
+
+
+
+.index-top{
+	color:grey;
+	width:50px;
+	height:50px;
+	border:none;
+	font-size:40px;
+	background-color:white;
+	margin-left:50%;
+	transform: translate(-50%);
+	margin-top:30px;
+
+	@include breakpoint('wide'){
+		 margin-left:55%;
+	}
+
+}
+
+

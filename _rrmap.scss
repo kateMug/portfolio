@@ -1,0 +1,615 @@
+.map-header{
+	background-image: url("../img/");	
+	height:30vh;
+	width:100%;
+	background-color: white;
+}
+
+
+.background-rrmap{
+	background-image: url("../img/map-new.jpg");		
+	background-color: white;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: top;
+	width:100%;
+	height:100vh;
+
+	@include breakpoint('medium'){
+		  /*background-image: url("../img/roadrunner-hero-med-1.jpg");*/
+		
+	
+	}
+
+	@include breakpoint('wide'){
+		/* background-image: url("../img/roadrunner-hero-wide.jpg");*/
+	}
+
+
+}
+
+/*.animatedlogo {
+	width:50px;
+	height:50px;
+	margin:10% auto;
+	// padding-top:40px;
+	animation-duration: 2.5s;
+  	animation-name: slidein;
+  	
+}*/
+
+/*.logo {
+	animation-name:slideleft;
+	animation-delay: 0;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 50%;
+  }
+
+  to {
+    margin-top: 10%;
+  }
+}*/
+.roadrunner-about{
+	width:70%;
+	margin:50px auto 50px;
+
+		@include breakpoint(wide){
+			margin-top:0px;
+		}
+
+		p{
+			font-size: 18px;
+			color:$color-text-dark;
+			font-family: $font-heading-web;
+			line-height: 1.2;
+		}
+
+		@include breakpoint('medium'){
+			font-size: 26px;
+		}
+
+		@include breakpoint('wide'){
+			visibility: hidden
+		}
+}
+
+
+
+.roadrunner-screen{
+
+	@include breakpoint('wide'){
+		position:absolute;
+		background-image:url(../img/desktop-frame.png);
+		background-repeat: no-repeat;
+		background-position: top, center;
+		height:900px;
+		background-size:860px 760px;
+		margin-top: 250px;
+
+		img{
+			display:none;
+		}
+
+	}
+
+			@include breakpoint('widest'){
+			height:900px;
+			background-size:950px 800px;
+		}
+
+
+} 
+
+.first-map{
+	width:auto;
+	height:100%;
+	margin:0;
+	padding:0;
+	/*border: 5px solid $color-text-light;*/
+	/*background-color: $color-text-light;*/
+	/*box-shadow: 2px 2px 20px rgba(0,0,0,0.3);
+	-moz-box-shadow:2px 2px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow:2px 2px 20px rgba(0,0,0,0.3);*/
+
+	@include breakpoint('phablet'){
+		width:80%;
+		margin:0 auto;
+		margin-top:0px;
+		display:block;
+	}
+
+	@include breakpoint('medium'){
+		width:100%;
+
+	}
+
+		@include breakpoint('wide'){
+			padding-top: 0;
+			margin-top:40px;
+
+		}
+
+			@include breakpoint('widest'){
+			padding-top: 0;
+			margin-top:20px;
+
+		}
+}
+
+
+
+.container-rr{
+	height:100vh;
+	width:auto;
+	margin:50px auto;
+	display:block;
+	cursor:pointer;
+	position: relative;
+	padding-left: 10px;
+
+	p{
+		color:black;
+		
+	}
+
+	@include breakpoint('phablet'){
+		margin:20px auto;
+		;
+	}
+
+		@include breakpoint('medium'){
+			margin:50px auto;
+			/*width:250px;
+*/
+		}
+
+		@include breakpoint('wide'){
+			margin:0 auto;
+			margin-top: 5%;
+			display:inline-block;
+			padding-top: 0;
+			float:left;
+
+		}
+
+		@include breakpoint('widest'){
+			margin:10% auto;
+		}
+
+		
+
+}
+
+.mouse{
+	/*margin-top: 400px;*/
+	margin-left:0px;
+	padding-top: 0px;
+
+	p{
+		font-family: $font-heading-web;
+		font-size: 16px;
+
+	}
+
+	img{
+		height:40px;
+		width:40px;
+		opacity: .4;
+		margin-top: -50px;
+		margin-left: 20px;
+	}
+
+		@include breakpoint('phablet'){
+	
+			p{
+				width:100px;
+				text-align: left;
+				top: 30px;
+				left:0;
+			}
+
+			img{
+				margin-left:0px;
+				margin-top: 0px;
+			}
+		}
+
+		@include breakpoint('medium'){
+			}
+
+			@include breakpoint('wide'){
+				width:30%;
+	
+				float:left;
+
+				p{
+					margin-left: 40%;
+					margin-top: 70px;
+					text-align: left;
+
+				}
+
+				img{
+					margin-left:10%;
+					padding-left: 30%;
+					margin-top: 120px;
+
+
+				}
+			}
+
+				@include breakpoint('widest'){
+					background-color: white;
+					width:40%;
+
+					p{
+						margin-left: 50%;
+						margin-top:120px;
+					}
+
+				}
+
+}
+
+p.about-map {
+
+	width:70%;
+	margin: 20px auto 10px;
+	display:block;
+	font-family:$font-heading-web;
+	font-size:20px;
+
+}
+
+
+.serious-map-rr img{
+	margin-top:40px;
+	width:auto;
+	height:100vh;
+
+	@include breakpoint('phablet'){
+	width:auto;
+	height:100vh;
+}
+
+
+}
+
+.serious-title{
+	padding-top: 50px;
+	width:100%;
+	
+
+	h4{
+		text-align: center;
+		font-family: $font-heading-web;
+		font-size: 18px;
+		color:grey;
+		width:100%;
+	}
+
+	@include breakpoint('phablet'){
+
+		h4{
+		font-size: 24px;
+		}
+	
+	}
+
+	@include breakpoint('wide'){
+		h4{
+			margin:0;
+			margin-top:-20px;
+			padding:0;
+		}
+	}
+}
+
+.auckland-container{
+	width:50px;
+	height:30px;
+	margin-top:0px;
+	position:absolute;	
+}
+
+.auckland-container:hover > .auckland{
+					width:700px; 
+					height:700px; 
+					margin-top:-70px;
+					margin-left:-100px;	
+}
+
+.auckland{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:red;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.auckland p{
+	margin-left:25px;
+	margin-top:0px;
+}
+
+
+.letter-changer::after {
+  animation: changeLetter 1s linear infinite alternate;
+}
+
+
+.hamilton-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:30px;
+}
+
+
+.hamilton-container:hover > .hamilton{
+	width:50px;
+	height:50px;
+	margin-top:100px;
+	margin-left:190px;
+}
+
+
+.hamilton{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:blue;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.hamilton p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.tauranga-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:60px;
+}
+
+
+.tauranga-container:hover > .tauranga{
+	width:65px;
+	height:65px;
+	margin-top:80px;
+	margin-left:210px;
+}
+
+
+.tauranga{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:green;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.tauranga p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+
+.napier-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:90px;
+}
+
+
+.napier-container:hover > .napier{
+	width:30px;
+	height:30px;
+	margin-top:120px;
+	margin-left:240px;
+}
+
+
+.napier{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:purple;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.napier p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.palmerston-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:120px;
+}
+
+
+.palmerston-container:hover > .palmerston{
+	width:63px;
+	height:63px;
+	margin-top:80px;
+	margin-left:190px;
+}
+
+
+.palmerston{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:yellow;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.palmerston p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.wellington-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:170px;
+}
+
+
+.wellington-container:hover > .wellington{
+	width:216px;
+	height:216px;
+	margin-top:-5px;
+	margin-left:95px;
+}
+
+
+.wellington{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:pink;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.wellington p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.nelson-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:220px;
+}
+
+
+.nelson-container:hover > .nelson{
+	width:35px;
+	height:35px;
+	margin-top:35px;
+	margin-left:155px;
+}
+
+
+.nelson{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:orange;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.nelson p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.christchurch-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:250px;
+}
+
+
+.christchurch-container:hover > .christchurch{
+	width:350px;
+	height:350px;
+	margin-top:-65px;
+	margin-left:-40px;
+}
+
+
+.christchurch{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:darkred;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.christchurch p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.dunedin-container{
+	width:50px;
+	height:30px;
+	position:absolute;
+	margin-top:280px;
+}
+
+
+.dunedin-container:hover > .dunedin{
+	width:150px;
+	height:150px;
+	margin-top:70px;
+	margin-left:25px;
+}
+
+
+.dunedin{
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background-color:darkblue;
+	position:absolute;
+	opacity:.5;
+	transition:all 1s;
+}
+
+.dunedin p{
+	margin-top:0px;
+	margin-left:25px;
+}
+
+.nav-roadrunner{
+	p{
+		width:70%;
+		margin:100px auto 50px;
+		font-family: $font-heading-web;
+		font-size:18px;
+	}
+
+	img{
+		width:100%;
+
+	}
+
+	@include breakpoint('wide'){
+		width:70%;
+		margin:300px auto;
+	}
+
+}
+
+
